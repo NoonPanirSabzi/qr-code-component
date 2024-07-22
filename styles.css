@@ -1,0 +1,9 @@
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+
+#qr_Explanation {
+  background-color: white;
+  width: 30vw;
+  height: 50vh;
+}
