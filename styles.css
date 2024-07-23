@@ -4,10 +4,40 @@ body {
 
 #qr_Explanation {
   background-color: white;
-  position: absolute;
+  position: relative;
   width: 22.22vw;
   height: 52.8vh;
   left: 38.89vw;
   top: 23.6vh;
   
+  
+}
+
+img {
+  width: 290px;
+  height: 290px;
+  
+}
+
+#bold_text {
+  font-family: "outfit_bold";
+  font-size: 22px;
+  line-height: 120%;
+}
+
+#regular_text {
+  font-family: "outfit_regular";
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+
+@font-face {
+  font-family: "outfit_bold";
+  src: url("/Outfit-Bold.ttf");
+}
+
+@font-face {
+  font-family: "outfit_regular";
+  src: url("/Outfit-Regular.ttf");
 }
