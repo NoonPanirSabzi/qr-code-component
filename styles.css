@@ -1,37 +1,3 @@
-body {
-  background-color: hsl(212, 45%, 89%);
-}
-
-#qr_Explanation {
-  background-color: white;
-  position: relative;
-  width: 22.22vw;
-  height: 52.8vh;
-  left: 38.89vw;
-  top: 23.6vh;
-  
-  
-}
-
-img {
-  width: 290px;
-  height: 290px;
-  
-}
-
-#bold_text {
-  font-family: "outfit_bold";
-  font-size: 22px;
-  line-height: 120%;
-}
-
-#regular_text {
-  font-family: "outfit_regular";
-  font-size: 15px;
-  line-height: 140%;
-  letter-spacing: 0.2px;
-}
-
 @font-face {
   font-family: "outfit_bold";
   src: url("/Outfit-Bold.ttf");
@@ -41,3 +7,57 @@ img {
   font-family: "outfit_regular";
   src: url("/Outfit-Regular.ttf");
 }
+
+body {
+  background-color: hsl(212, 45%, 89%);
+}
+
+#qr_Explanation {
+  background-color: white;
+  position: relative;
+  width: 320px;
+  height: 500px;
+  left: 38.89vw;
+  top: 23.6vh;
+  
+  padding: 16px 16px 20px;
+
+  border-radius: 20px;
+}
+
+img {
+  position: relative;
+  width: 321px;
+  height: 321px;
+  
+  border-radius: 10px;
+}
+
+#bold_text {
+  font-family: "outfit_bold";
+  font-size: 22px;
+  line-height: 120%;
+  width: 256px;
+  height: 52px;
+  text-align: center;
+  position: relative;
+  left: 36px;
+  margin-top: 24px;
+  margin-bottom: 0px;
+}
+
+#regular_text {
+  font-family: "outfit_regular";
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+  width: 256px;
+  height: 63px;
+  text-align: center;
+  position: inherit;
+  left: 36px;
+  margin-top: 16px;
+  margin-bottom: 0px;
+}
+
+
