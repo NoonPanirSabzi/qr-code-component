@@ -9,41 +9,35 @@
 }
 
 body {
+  padding: 10vh 0 10vh 0;
   background-color: hsl(212, 45%, 89%);
 }
 
 #qr_Explanation {
   background-color: white;
-  position: relative;
-  width: 320px;
-  height: 500px;
-  left: 38.89vw;
-  top: 23.6vh;
-  
+  width: 288px;
+  height: 464px;
+  margin: auto;
+
   padding: 16px 16px 20px;
 
   border-radius: 20px;
 }
 
 img {
-  position: relative;
-  width: 321px;
-  height: 321px;
-  
+  width: 288px;
   border-radius: 10px;
 }
 
 #bold_text {
   font-family: "outfit_bold";
+  text-align: center;
   font-size: 22px;
   line-height: 120%;
   width: 256px;
-  height: 52px;
-  text-align: center;
-  position: relative;
-  left: 36px;
+  margin: auto;
   margin-top: 24px;
-  margin-bottom: 0px;
+  position: relative;
 }
 
 #regular_text {
@@ -52,12 +46,8 @@ img {
   line-height: 140%;
   letter-spacing: 0.2px;
   width: 256px;
-  height: 63px;
   text-align: center;
-  position: inherit;
-  left: 36px;
+  margin: auto;
   margin-top: 16px;
-  margin-bottom: 0px;
+  position: relative;
 }
-
-
