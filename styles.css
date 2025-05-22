@@ -31,6 +31,7 @@ body {
 }
 
 .bold-text {
+  color: rgb(31, 49, 79);
   font-family: "outfit_bold";
   text-align: center;
   font-size: 22px;
@@ -42,6 +43,7 @@ body {
 }
 
 .regular-text {
+  color: rgb(104, 119, 141);
   font-family: "outfit_regular";
   font-size: 15px;
   line-height: 140%;
