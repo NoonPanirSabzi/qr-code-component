@@ -1,35 +1,36 @@
 @font-face {
   font-family: "outfit_bold";
-  src: url("/Outfit-Bold.ttf");
+  src: url("Outfit-Bold.ttf");
 }
 
 @font-face {
   font-family: "outfit_regular";
-  src: url("/Outfit-Regular.ttf");
+  src: url("Outfit-Regular.ttf");
 }
 
 body {
-  padding: 10vh 0 10vh 0;
   background-color: hsl(212, 45%, 89%);
 }
 
+/* TO DO: responsive size with flexbox*/
 #qr_Explanation {
   background-color: white;
   width: 288px;
   height: 464px;
-  margin: auto;
-
   padding: 16px 16px 20px;
-
   border-radius: 20px;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
+  display: flex;
+  flex-flow: column;
 }
 
-img {
+
+.image {
   width: 288px;
   border-radius: 10px;
 }
 
-#bold_text {
+.bold-text {
   font-family: "outfit_bold";
   text-align: center;
   font-size: 22px;
@@ -37,10 +38,10 @@ img {
   width: 256px;
   margin: auto;
   margin-top: 24px;
-  position: relative;
+  /* position: relative; what does this do?!*/
 }
 
-#regular_text {
+.regular-text {
   font-family: "outfit_regular";
   font-size: 15px;
   line-height: 140%;
@@ -49,5 +50,14 @@ img {
   text-align: center;
   margin: auto;
   margin-top: 16px;
-  position: relative;
+  /* position: relative; what does this do?!*/ 
+}
+
+/* fixes horizontal and vertical centering by extending body to occu */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; /*the default margin (8px i guess), produces unwanted vertical scrolling*/
 }
