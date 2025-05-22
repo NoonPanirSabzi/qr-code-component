@@ -12,22 +12,41 @@ body {
   background-color: hsl(212, 45%, 89%);
 }
 
-/* TO DO: responsive size with flexbox*/
-#qr_Explanation {
+/* fixes horizontal and vertical centering the box by extending body to take all viewport */
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0; /*the default margin (8px i guess), produces unwanted vertical scrolling*/
+}
+
+#box {
   background-color: white;
-  width: 288px;
-  height: 464px;
-  padding: 16px 16px 20px;
+  width: 320px;
+  padding: 16px 16px 40px;
   border-radius: 20px;
   box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
   display: flex;
   flex-flow: column;
+  gap: 24px;
+  align-items: center;
+  box-sizing: border-box; /*the box remains 320px width, with or without padding */
 }
 
-
-.image {
-  width: 288px;
+.box-image {
   border-radius: 10px;
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+#box-text {
+  display: flex;
+  flex-flow: column;
+  gap: 16px;
 }
 
 .bold-text {
@@ -36,10 +55,6 @@ body {
   text-align: center;
   font-size: 22px;
   line-height: 120%;
-  width: 256px;
-  margin: auto;
-  margin-top: 24px;
-  /* position: relative; what does this do?!*/
 }
 
 .regular-text {
@@ -48,18 +63,10 @@ body {
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.2px;
-  width: 256px;
   text-align: center;
-  margin: auto;
-  margin-top: 16px;
-  /* position: relative; what does this do?!*/ 
 }
 
-/* fixes horizontal and vertical centering by extending body to occu */
-body{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0; /*the default margin (8px i guess), produces unwanted vertical scrolling*/
+p {
+  margin: 0;
 }
+
