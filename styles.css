@@ -8,25 +8,29 @@
   src: url("Outfit-Regular.ttf");
 }
 
-body {
-  background-color: hsl(212, 45%, 89%);
+:root {
+  --body-bg: hsl(212, 45%, 89%);
+  --slate-900: rgb(31, 49, 79);
+  --slate-500: rgb(104, 119, 141);
+  --qr-box-shadow: rgba(0, 0, 0, 0.0477);
 }
 
-/* fixes horizontal and vertical centering the box by extending body to take all viewport */
+
 body{
+  background-color: var(--body-bg);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100vh;  /* extends body to take all viewport vertically */
   margin: 0; /*the default margin (8px i guess), produces unwanted vertical scrolling*/
 }
 
-#box {
+.qr-code-box {
   background-color: white;
   width: 320px;
   padding: 16px 16px 40px;
   border-radius: 20px;
-  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.0477);
+  box-shadow: 0px 25px 25px var(--qr-box-shadow);
   display: flex;
   flex-flow: column;
   gap: 24px;
@@ -34,7 +38,7 @@ body{
   box-sizing: border-box; /*the box remains 320px width, with or without padding */
 }
 
-.box-image {
+.qr-code-box__image {
   border-radius: 10px;
   overflow: hidden;
 }
@@ -43,30 +47,30 @@ img {
   max-width: 100%;
 }
 
-#box-text {
+.qr-code-box__text {
   display: flex;
   flex-flow: column;
   gap: 16px;
 }
 
-.bold-text {
-  color: rgb(31, 49, 79);
-  font-family: "outfit_bold";
+.qr-code-box__text--bold {
+  color: var(--slate-900);
+  font-family: "outfit_bold", serif;
   text-align: center;
   font-size: 22px;
   line-height: 120%;
 }
 
-.regular-text {
-  color: rgb(104, 119, 141);
-  font-family: "outfit_regular";
+.qr-code-box__text--regular {
+  color: var(--slate-500);
+  font-family: "outfit_regular", sans-serif;
   font-size: 15px;
   line-height: 140%;
   letter-spacing: 0.2px;
   text-align: center;
 }
 
-p {
+.qr-code-box__text p{
   margin: 0;
 }
 
