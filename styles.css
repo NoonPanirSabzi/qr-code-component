@@ -16,13 +16,12 @@
   --qr-box-bg: white;
 }
 
-
-body{
+body {
   background-color: var(--body-bg);
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;  /* extends body to take all viewport vertically */
+  min-height: 100vh; /* extends body to take all viewport vertically */
   margin: 0; /*the default margin (8px i guess), produces unwanted vertical scrolling*/
 }
 
@@ -71,7 +70,7 @@ img {
   text-align: center;
 }
 
-.qr-code-box__text p{
+.qr-code-box__text p {
   margin: 0;
 }
 

@@ -30,6 +30,13 @@ As I continued with my course and learned the basic concepts of HTML and CSS, I 
 "Oh💡, so this is how I can easily center boxes along the vertical axis."   
 It felt amazing and now I am much more confident to continue this road. 
 
+### Extra useful resources:
+
+- [The viewport meta tag](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design#the_viewport_meta_tag): Small trick, at first I wasn't aware of this, hence I was confused a lot
+- [BEM css naming convention](https://www.freecodecamp.org/news/css-naming-conventions-that-will-save-you-hours-of-debugging-35cea737d849/): Makes it easier for both code writer and reader
+- [css custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_cascading_variables/Using_CSS_custom_properties): Pays a huge rule in big and complex designs
+- [box-sizing property](https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing): This one is tricky too if you don't take it in considration when aiming for pixel perfect design
+
 
 
 
