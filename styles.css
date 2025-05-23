@@ -13,6 +13,7 @@
   --slate-900: rgb(31, 49, 79);
   --slate-500: rgb(104, 119, 141);
   --qr-box-shadow: rgba(0, 0, 0, 0.0477);
+  --qr-box-bg: white;
 }
 
 
@@ -26,7 +27,7 @@ body{
 }
 
 .qr-code-box {
-  background-color: white;
+  background-color: var(--qr-box-bg);
   width: 320px;
   padding: 16px 16px 40px;
   border-radius: 20px;
@@ -57,16 +58,16 @@ img {
   color: var(--slate-900);
   font-family: "outfit_bold", serif;
   text-align: center;
-  font-size: 22px;
+  font-size: 1.375rem;
   line-height: 120%;
 }
 
 .qr-code-box__text--regular {
   color: var(--slate-500);
   font-family: "outfit_regular", sans-serif;
-  font-size: 15px;
+  font-size: 0.9375rem;
   line-height: 140%;
-  letter-spacing: 0.2px;
+  letter-spacing: 0.0125rem;
   text-align: center;
 }
 
@@ -76,8 +77,8 @@ img {
 
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
+  width: 1%;
+  height: 1%;
   overflow: hidden;
   clip-path: rect(0 0 0 0);
 }
